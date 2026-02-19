@@ -1,0 +1,347 @@
+export const citiesGlobal = [
+  // === 亚洲 (8) ===
+  {
+    id: 'tokyo',
+    name: '东京',
+    country: '日本',
+    intro: '东京是日本的首都和最大城市，融合了超现代摩天大楼与古老寺庙，从银座的奢华购物到秋叶原的动漫文化，从筑地的顶级寿司到新宿的不夜城，这座城市是传统与未来的完美交融。',
+    personalityTags: ['极致型', '秩序型', '潮流型'],
+    featureTags: ['动漫圣地', '美食之都', '科技前沿'],
+    description: '你追求极致和完美，东京的匠人精神和无处不在的细节控，与你骨子里的讲究不谋而合。从原宿到银座，这座城市和你一样，能在传统与先锋之间游刃有余。',
+    traits: { artistic: 3, social: 3, adventure: 2, career: 4, nature: 1, food: 5, freedom: 2, culture: 5 },
+    color: '#DC2626',
+    emoji: '🗼'
+  },
+  {
+    id: 'seoul',
+    name: '首尔',
+    country: '韩国',
+    intro: '首尔是韩国的首都，拥有六百多年历史的古都与全球流行文化的前沿阵地。景福宫与北村韩屋村承载着朝鲜王朝的记忆，江南和弘大则引领着K-POP、美妆和潮流时尚的全球风潮。',
+    personalityTags: ['潮流型', '社交型', '拼搏型'],
+    featureTags: ['K-POP圣地', '美妆天堂', '不夜城'],
+    description: '你是走在潮流前线的弄潮儿，对美和流行有着敏锐的嗅觉。首尔的弘大街头、明洞霓虹和永远卷不停的节奏，和你那颗追逐热爱的心完美同频。',
+    traits: { artistic: 3, social: 4, adventure: 2, career: 4, nature: 1, food: 4, freedom: 2, culture: 3 },
+    color: '#E11D48',
+    emoji: '🎤'
+  },
+  {
+    id: 'bangkok',
+    name: '曼谷',
+    country: '泰国',
+    intro: '曼谷是泰国首都，一座充满反差魅力的热带大都会。大皇宫和卧佛寺金碧辉煌，湄南河穿城而过，街头小摊的冬阴功和芒果糯米饭香气四溢，水上市场与摩天大楼在这里和谐共存。',
+    personalityTags: ['享乐型', '包容型', '烟火型'],
+    featureTags: ['街头美食', '寺庙之城', '夜市天堂'],
+    description: '你是一个懂得享受当下的人，从不亏待自己的胃和灵魂。曼谷的路边摊香气、金碧辉煌的佛寺和永远热闹的夜市，就像你的人生信条——活在当下，尽情享受。',
+    traits: { artistic: 2, social: 3, adventure: 3, career: 2, nature: 2, food: 5, freedom: 4, culture: 4 },
+    color: '#F59E0B',
+    emoji: '🛕'
+  },
+  {
+    id: 'singapore',
+    name: '新加坡',
+    country: '新加坡',
+    intro: '新加坡是东南亚的城市国家，以高度现代化和多元文化闻名于世。滨海湾花园的超级树、鱼尾狮公园和小印度的色彩斑斓交相辉映，华人、马来、印度等多元文化在这座花园城市完美融合。',
+    personalityTags: ['精英型', '高效型', '规划型'],
+    featureTags: ['花园城市', '金融中心', '多元文化'],
+    description: '你做事有条理、追求效率，骨子里是个完美主义者。新加坡的整洁秩序、多元融合和高效运转，和你那颗追求卓越又热爱生活的心一拍即合。',
+    traits: { artistic: 2, social: 3, adventure: 2, career: 5, nature: 3, food: 4, freedom: 2, culture: 3 },
+    color: '#059669',
+    emoji: '🦁'
+  },
+  {
+    id: 'chiangmai',
+    name: '清迈',
+    country: '泰国',
+    intro: '清迈是泰国北部的古城，兰纳王朝的故都，被群山环绕，气候凉爽宜人。古城内三百余座寺庙星罗棋布，周末夜市手工艺品琳琅满目，近年更成为全球数字游民和慢生活爱好者的聚集地。',
+    personalityTags: ['佛系型', '自由型', '创意型'],
+    featureTags: ['数字游民', '古城慢生活', '咖啡之城'],
+    description: '你向往一种有wifi就能工作、有咖啡就能快乐的生活方式。清迈的古城小巷、山间寺庙和遍地咖啡馆，是全球数字游民和慢生活爱好者的乌托邦。',
+    traits: { artistic: 4, social: 2, adventure: 3, career: 2, nature: 4, food: 3, freedom: 5, culture: 4 },
+    color: '#D97706',
+    emoji: '☕'
+  },
+  {
+    id: 'bali',
+    name: '巴厘岛',
+    country: '印度尼西亚',
+    intro: '巴厘岛是印度尼西亚的度假胜地，以其独特的印度教文化和热带自然风光闻名。乌布的梯田和艺术村落、库塔的冲浪海滩、海神庙的壮丽日落，以及遍布全岛的瑜伽和冥想中心，吸引着全球旅人。',
+    personalityTags: ['灵性型', '自然型', '治愈型'],
+    featureTags: ['瑜伽圣地', '热带天堂', '灵魂净化'],
+    description: '你内心深处渴望一次彻底的灵魂重启。巴厘岛的梯田日出、乌布丛林和海边冥想，能让你暂时忘记KPI，找回那个最真实的自己。',
+    traits: { artistic: 4, social: 2, adventure: 3, career: 1, nature: 5, food: 3, freedom: 5, culture: 4 },
+    color: '#16A34A',
+    emoji: '🌴'
+  },
+  {
+    id: 'kyoto',
+    name: '京都',
+    country: '日本',
+    intro: '京都是日本千年古都，曾作为皇都长达一千余年，保存着两千余座神社寺庙和众多世界文化遗产。金阁寺、伏见稻荷大社、岚山竹林构成绝美风景，茶道、花道和艺伎文化在此代代传承。',
+    personalityTags: ['古典型', '内敛型', '雅致型'],
+    featureTags: ['千年古都', '庭院美学', '和风之美'],
+    description: '你有着超越年龄的沉静和审美，对传统文化有着发自内心的尊重。京都的枯山水庭园、艺伎小巷和一期一会的茶道精神，与你内心深处的风雅完美共鸣。',
+    traits: { artistic: 5, social: 1, adventure: 1, career: 2, nature: 4, food: 4, freedom: 3, culture: 5 },
+    color: '#9333EA',
+    emoji: '⛩️'
+  },
+  {
+    id: 'hanoi',
+    name: '河内',
+    country: '越南',
+    intro: '河内是越南的首都，拥有一千多年建城史的东南亚古都。还剑湖畔宁静悠远，老城区三十六行街保留着传统手工业的记忆，法式殖民建筑与越南庙宇交错，街头的蛋咖啡和河粉是城市的味觉名片。',
+    personalityTags: ['烟火型', '探索型', '随性型'],
+    featureTags: ['老城风情', '越南咖啡', '摩托车洪流'],
+    description: '你喜欢那种混乱中带着秩序、嘈杂中藏着温情的城市。河内的老城区36街、街头蛋咖啡和永远堵不完的摩托车，让你在异国也能找到熟悉的烟火气。',
+    traits: { artistic: 2, social: 3, adventure: 4, career: 1, nature: 2, food: 4, freedom: 3, culture: 3 },
+    color: '#B91C1C',
+    emoji: '🏍️'
+  },
+
+  // === 欧洲 (9) ===
+  {
+    id: 'paris',
+    name: '巴黎',
+    country: '法国',
+    intro: '巴黎是法国首都，世界艺术与时尚之都。塞纳河将城市一分为二，卢浮宫收藏着无数艺术珍品，埃菲尔铁塔已成为全球最具辨识度的地标，香榭丽舍大道和蒙马特高地书写着浪漫与优雅的永恒传奇。',
+    personalityTags: ['浪漫型', '艺术型', '品味型'],
+    featureTags: ['浪漫之都', '时尚中心', '艺术殿堂'],
+    description: '你骨子里是个浪漫主义者，对美有着近乎偏执的追求。巴黎的塞纳河畔、卢浮宫的光影和街角咖啡馆的法式风情，就是为你这样的灵魂量身定做的。',
+    traits: { artistic: 5, social: 3, adventure: 2, career: 3, nature: 2, food: 5, freedom: 3, culture: 5 },
+    color: '#1E3A8A',
+    emoji: '🗼'
+  },
+  {
+    id: 'london',
+    name: '伦敦',
+    country: '英国',
+    intro: '伦敦是英国首都，一座融合了皇室传统与现代多元文化的世界级都市。大本钟和白金汉宫彰显帝国风范，大英博物馆汇聚人类文明瑰宝，西区剧院上演世界顶级戏剧，泰晤士河见证着这座城市两千年的变迁。',
+    personalityTags: ['经典型', '多元型', '知识型'],
+    featureTags: ['绅士文化', '金融帝国', '戏剧之都'],
+    description: '你是那种既能聊莎士比亚又能聊区块链的人，骨子里有一种英式的克制和深度。伦敦的大英博物馆、西区剧院和多元包容的气质，和你的知性灵魂不谋而合。',
+    traits: { artistic: 4, social: 3, adventure: 2, career: 4, nature: 2, food: 3, freedom: 3, culture: 5 },
+    color: '#1E40AF',
+    emoji: '🎭'
+  },
+  {
+    id: 'barcelona',
+    name: '巴塞罗那',
+    country: '西班牙',
+    intro: '巴塞罗那是西班牙加泰罗尼亚的首府，地中海沿岸最具艺术气息的城市。高迪的圣家堂历经百年仍在建造，兰布拉大道永远热闹非凡，诺坎普球场承载着足球信仰，阳光、海滩和弗拉门戈舞点燃每一个夜晚。',
+    personalityTags: ['热情型', '艺术型', '自由型'],
+    featureTags: ['高迪之城', '足球圣地', '地中海风情'],
+    description: '你是一个浑身散发着热情和创造力的人，拒绝被规则束缚。巴塞罗那的高迪建筑、兰布拉大道的狂欢和永远蓝得不像话的地中海，完美匹配你自由奔放的灵魂。',
+    traits: { artistic: 5, social: 4, adventure: 3, career: 2, nature: 3, food: 4, freedom: 5, culture: 4 },
+    color: '#DC2626',
+    emoji: '🎨'
+  },
+  {
+    id: 'amsterdam',
+    name: '阿姆斯特丹',
+    country: '荷兰',
+    intro: '阿姆斯特丹是荷兰首都，以纵横交错的运河和自由包容的城市精神闻名。梵高博物馆和国立博物馆珍藏着荷兰黄金时代的艺术杰作，运河边的窄房子倒映水中，自行车铃声和郁金香花香是这座城市的独特标记。',
+    personalityTags: ['自由型', '包容型', '创新型'],
+    featureTags: ['运河之城', '自由之都', '设计先锋'],
+    description: '你对"不一样"有着天然的好感，尊重每一种生活方式的存在。阿姆斯特丹的运河骑行、博物馆和无处不在的包容精神，和你"live and let live"的人生态度完美契合。',
+    traits: { artistic: 4, social: 3, adventure: 3, career: 3, nature: 3, food: 3, freedom: 5, culture: 4 },
+    color: '#EA580C',
+    emoji: '🚲'
+  },
+  {
+    id: 'rome',
+    name: '罗马',
+    country: '意大利',
+    intro: '罗马是意大利首都，拥有近三千年历史的"永恒之城"。罗马斗兽场、万神殿和古罗马广场诉说着帝国的辉煌，特雷维喷泉前许愿的传统延续至今，这里也是文艺复兴的摇篮和意式美食的殿堂。',
+    personalityTags: ['浪漫型', '历史型', '享乐型'],
+    featureTags: ['永恒之城', '文艺复兴', '美食圣地'],
+    description: '你相信生活应该有仪式感，历史和当下都值得被认真对待。罗马的斗兽场、许愿池和街角的Gelato，教会你一件事——人生就该像意大利人一样，慢慢享受。',
+    traits: { artistic: 4, social: 3, adventure: 2, career: 2, nature: 2, food: 5, freedom: 3, culture: 5 },
+    color: '#92400E',
+    emoji: '🏛️'
+  },
+  {
+    id: 'prague',
+    name: '布拉格',
+    country: '捷克',
+    intro: '布拉格是捷克首都，被誉为"百塔之城"和"欧洲最美城市"之一。查理大桥连接着老城与城堡区，布拉格城堡是世界最大的古堡建筑群，波西米亚风情与哥特式尖塔交织出一幅中世纪童话画卷。',
+    personalityTags: ['文艺型', '梦幻型', '内省型'],
+    featureTags: ['童话之城', '波西米亚', '音乐之都'],
+    description: '你心里住着一个爱做梦的小孩，对童话般的美好始终怀有向往。布拉格的查理大桥、红顶房屋和波西米亚的自由气质，就像你内心深处那个最柔软的角落。',
+    traits: { artistic: 5, social: 2, adventure: 2, career: 2, nature: 3, food: 3, freedom: 4, culture: 5 },
+    color: '#7C3AED',
+    emoji: '🏰'
+  },
+  {
+    id: 'vienna',
+    name: '维也纳',
+    country: '奥地利',
+    intro: '维也纳是奥地利首都，欧洲古典音乐的中心。金色大厅回荡着莫扎特和施特劳斯的旋律，美泉宫和霍夫堡宫见证了哈布斯堡王朝的荣耀，百年咖啡馆的萨赫蛋糕和维也纳咖啡是这座城市优雅生活的缩影。',
+    personalityTags: ['优雅型', '古典型', '品质型'],
+    featureTags: ['音乐之都', '咖啡文化', '皇家气质'],
+    description: '你对品质生活有着不妥协的坚持，欣赏经典和永恒的美。维也纳的金色大厅、百年咖啡馆和街头巷尾的古典乐，与你追求优雅和深度的灵魂高度共振。',
+    traits: { artistic: 5, social: 2, adventure: 1, career: 3, nature: 2, food: 4, freedom: 2, culture: 5 },
+    color: '#B45309',
+    emoji: '🎻'
+  },
+  {
+    id: 'lisbon',
+    name: '里斯本',
+    country: '葡萄牙',
+    intro: '里斯本是葡萄牙首都，建在七座山丘之上的大西洋港口城市。贝伦塔和热罗尼莫斯修道院铭记着大航海时代的荣光，黄色有轨电车穿行于彩色瓷砖装饰的老街，法朵音乐在阿尔法玛区的小酒馆中低吟浅唱。',
+    personalityTags: ['随性型', '文艺型', '温暖型'],
+    featureTags: ['七丘之城', '法朵之乡', '欧洲阳台'],
+    description: '你是那种不急不躁、自带温暖磁场的人。里斯本的彩色瓷砖、叮叮作响的黄色电车和大西洋的海风，给你一种"这辈子不着急"的从容与美好。',
+    traits: { artistic: 4, social: 3, adventure: 3, career: 1, nature: 4, food: 4, freedom: 4, culture: 4 },
+    color: '#F59E0B',
+    emoji: '🚋'
+  },
+  {
+    id: 'santorini',
+    name: '圣托里尼',
+    country: '希腊',
+    intro: '圣托里尼是希腊爱琴海上的火山岛，以蓝顶白墙的基克拉迪建筑闻名于世。伊亚小镇的日落被誉为全球最美，悬崖上的酒店俯瞰碧蓝海面，火山温泉和本地葡萄酒为这座浪漫之岛增添了独特魅力。',
+    personalityTags: ['浪漫型', '唯美型', '治愈型'],
+    featureTags: ['蓝白天堂', '爱琴海落日', '蜜月圣地'],
+    description: '你是那种会被一场日落感动到落泪的人，相信世界上存在完美的瞬间。圣托里尼的蓝顶白墙、悬崖晚餐和爱琴海的日落，就是你心中那幅最美画面的现实版。',
+    traits: { artistic: 5, social: 2, adventure: 2, career: 1, nature: 5, food: 3, freedom: 4, culture: 3 },
+    color: '#2563EB',
+    emoji: '🌅'
+  },
+
+  // === 美洲 (5) ===
+  {
+    id: 'newyork',
+    name: '纽约',
+    country: '美国',
+    intro: '纽约是美国最大的城市，全球金融、文化和媒体的中心。自由女神像守望着哈德逊河口，曼哈顿的摩天大楼组成壮观天际线，百老汇、中央公园、大都会博物馆和时代广场让这座不夜城永远充满能量。',
+    personalityTags: ['野心型', '多元型', '不夜型'],
+    featureTags: ['世界之都', '百老汇', '自由女神'],
+    description: '你心中有一团不灭的火，相信自己能在最大的舞台上发光。纽约的曼哈顿天际线、百老汇的灯火和永不停歇的地铁，就是为你这样敢想敢闯的灵魂准备的。',
+    traits: { artistic: 3, social: 4, adventure: 4, career: 5, nature: 1, food: 4, freedom: 3, culture: 4 },
+    color: '#1E293B',
+    emoji: '🗽'
+  },
+  {
+    id: 'sanfrancisco',
+    name: '旧金山',
+    country: '美国',
+    intro: '旧金山是美国加州的海湾城市，硅谷科技创新的门户。金门大桥横跨海峡成为城市标志，渔人码头海风拂面，彩色维多利亚式房屋点缀着陡峭山丘，这里也是嬉皮运动和多元平权文化的发源地。',
+    personalityTags: ['创新型', '自由型', '极客型'],
+    featureTags: ['硅谷之心', '彩虹之城', '金门大桥'],
+    description: '你脑子里永远有新想法，相信科技和创意能改变世界。旧金山的硅谷基因、嬉皮文化和包容一切的气质，就像你一样——既是理想主义者，也是行动派。',
+    traits: { artistic: 3, social: 3, adventure: 3, career: 5, nature: 3, food: 3, freedom: 5, culture: 3 },
+    color: '#F97316',
+    emoji: '🌉'
+  },
+  {
+    id: 'vancouver',
+    name: '温哥华',
+    country: '加拿大',
+    intro: '温哥华是加拿大西海岸的港口城市，被雪山、海洋和森林环抱。斯坦利公园是北美最大的城市公园之一，格兰维尔岛集市充满文艺气息，多次被评为全球最宜居城市，多元文化在此和谐共融。',
+    personalityTags: ['平衡型', '自然型', '宜居型'],
+    featureTags: ['山海之城', '宜居天堂', '多元文化'],
+    description: '你是一个把work-life balance写进人生信条的人，既要事业也要生活品质。温哥华的雪山海洋、城市公园和亚洲美食，让你鱼和熊掌可以兼得。',
+    traits: { artistic: 3, social: 2, adventure: 3, career: 3, nature: 5, food: 3, freedom: 4, culture: 3 },
+    color: '#0891B2',
+    emoji: '🏔️'
+  },
+  {
+    id: 'buenosaires',
+    name: '布宜诺斯艾利斯',
+    country: '阿根廷',
+    intro: '布宜诺斯艾利斯是阿根廷首都，被誉为"南美洲的巴黎"。博卡区的彩色铁皮房和街头探戈热情奔放，雷科莱塔的法式建筑典雅精致，烤肉配马尔贝克红酒是这座城市对生活热爱的最好诠释。',
+    personalityTags: ['热情型', '艺术型', '浪漫型'],
+    featureTags: ['探戈之都', '南美巴黎', '足球狂热'],
+    description: '你身上有一种拉丁式的热情和忧郁，对生活有着强烈的感受力。布宜诺斯艾利斯的探戈街头、彩色博卡区和深夜烤肉局，让你在地球另一端找到了灵魂的共鸣。',
+    traits: { artistic: 4, social: 4, adventure: 3, career: 2, nature: 2, food: 4, freedom: 4, culture: 5 },
+    color: '#7DD3FC',
+    emoji: '💃'
+  },
+  {
+    id: 'mexicocity',
+    name: '墨西哥城',
+    country: '墨西哥',
+    intro: '墨西哥城是墨西哥首都，建在阿兹特克古城特诺奇提特兰的遗址之上。国家宫殿内迭戈·里维拉的壁画气势恢宏，特奥蒂瓦坎金字塔见证古老文明，街头塔可和莫莱酱的浓烈风味是这座城市的味觉灵魂。',
+    personalityTags: ['活力型', '烟火型', '文化型'],
+    featureTags: ['壁画之城', '玛雅遗韵', '街头美食'],
+    description: '你对色彩和味觉有着超强感知力，喜欢浓烈而非淡雅的生活。墨西哥城的弗里达壁画、辣到飞起的taco和永远热闹的广场，和你那颗火热的心完美共振。',
+    traits: { artistic: 4, social: 3, adventure: 4, career: 2, nature: 2, food: 5, freedom: 3, culture: 5 },
+    color: '#15803D',
+    emoji: '🌮'
+  },
+
+  // === 大洋洲 (3) ===
+  {
+    id: 'sydney',
+    name: '悉尼',
+    country: '澳大利亚',
+    intro: '悉尼是澳大利亚最大的城市，南半球最具活力的国际都市。悉尼歌剧院的白色风帆造型举世闻名，海港大桥横跨杰克逊港，邦迪海滩的浪花和蓝山的原始丛林让这座城市在都市繁华与自然野趣间自由切换。',
+    personalityTags: ['阳光型', '运动型', '国际型'],
+    featureTags: ['歌剧院', '海滩文化', '阳光之城'],
+    description: '你是一个永远充满阳光和正能量的人，热爱户外和运动。悉尼的邦迪海滩、港湾大桥和周末烧烤文化，和你那种积极向上、享受生活的态度完美契合。',
+    traits: { artistic: 2, social: 4, adventure: 4, career: 3, nature: 4, food: 3, freedom: 4, culture: 2 },
+    color: '#0EA5E9',
+    emoji: '🏄'
+  },
+  {
+    id: 'melbourne',
+    name: '墨尔本',
+    country: '澳大利亚',
+    intro: '墨尔本是澳大利亚的文化之都，多次被评为全球最宜居城市。隐藏在小巷中的精品咖啡馆是城市灵魂所在，街头涂鸦和独立艺术画廊遍布各区，维多利亚市场和南岸的河畔餐厅展现着多元美食文化。',
+    personalityTags: ['文艺型', '咖啡型', '小众型'],
+    featureTags: ['咖啡之都', '街头艺术', '文化多元'],
+    description: '你是一个有态度的文艺青年，喜欢小众但有品质的东西。墨尔本的巷子咖啡馆、街头涂鸦和独立音乐现场，完美适配你那颗拒绝平庸的心。',
+    traits: { artistic: 5, social: 3, adventure: 2, career: 2, nature: 3, food: 4, freedom: 4, culture: 4 },
+    color: '#1D4ED8',
+    emoji: '☕'
+  },
+  {
+    id: 'auckland',
+    name: '奥克兰',
+    country: '新西兰',
+    intro: '奥克兰是新西兰最大城市，坐落在两大港湾之间，被称为"千帆之城"。天空塔是南半球最高的独立建筑，周围散布着四十多座火山锥，纯净的空气、壮丽的海岸线和毛利文化赋予了这座城市独特的自然与人文魅力。',
+    personalityTags: ['自然型', '平和型', '冒险型'],
+    featureTags: ['千帆之城', '火山之城', '户外天堂'],
+    description: '你是一个在大自然中才能真正放松的人，崇尚纯净和简单。奥克兰的火山徒步、帆船出海和纯净的新西兰空气，让你感受到生活最本真的美好。',
+    traits: { artistic: 2, social: 2, adventure: 4, career: 2, nature: 5, food: 2, freedom: 4, culture: 2 },
+    color: '#22C55E',
+    emoji: '⛵'
+  },
+
+  // === 非洲/中东 (3) ===
+  {
+    id: 'capetown',
+    name: '开普敦',
+    country: '南非',
+    intro: '开普敦是南非的立法首都，位于非洲大陆最南端。桌山平顶如削俯瞰整座城市，好望角的巨浪拍打着岩石海岸，博尔德斯海滩的非洲企鹅憨态可掬，多元种族文化在"彩虹之国"的母亲城中交汇融合。',
+    personalityTags: ['冒险型', '自然型', '探索型'],
+    featureTags: ['好望角', '彩虹之国', '自然奇观'],
+    description: '你心里藏着一个探险家，渴望看到课本之外的世界。开普敦的桌山云海、好望角的惊涛和企鹅海滩的呆萌，能满足你对这个星球所有的好奇心。',
+    traits: { artistic: 2, social: 3, adventure: 5, career: 2, nature: 5, food: 3, freedom: 4, culture: 3 },
+    color: '#15803D',
+    emoji: '🐧'
+  },
+  {
+    id: 'dubai',
+    name: '迪拜',
+    country: '阿联酋',
+    intro: '迪拜是阿联酋的商业中心，一座从沙漠中崛起的未来之城。哈利法塔是全球最高建筑，棕榈岛和帆船酒店刷新着人类工程的极限，黄金市集保留着阿拉伯商贸传统，这座城市用短短数十年书写了一部现代奇迹史。',
+    personalityTags: ['奢华型', '野心型', '未来型'],
+    featureTags: ['沙漠奇迹', '奢华之都', '未来之城'],
+    description: '你相信没有什么是不可能的，对顶级和极致有着天然的向往。迪拜在沙漠中建起的高楼奇迹和"一切皆有可能"的态度，和你那颗不设限的野心完美匹配。',
+    traits: { artistic: 2, social: 3, adventure: 3, career: 5, nature: 1, food: 3, freedom: 2, culture: 2 },
+    color: '#B8860B',
+    emoji: '🏙️'
+  },
+  {
+    id: 'marrakech',
+    name: '马拉喀什',
+    country: '摩洛哥',
+    intro: '马拉喀什是摩洛哥的古都，被称为"红色之城"。德吉玛广场的杂耍艺人和小吃摊千年不息，迷宫般的麦地那老城藏着精美的庭院旅馆，马约尔花园的蓝色建筑和撒哈拉沙漠的驼铃声构成了北非最迷人的异域画卷。',
+    personalityTags: ['异域型', '感官型', '探索型'],
+    featureTags: ['千年古城', '沙漠玫瑰', '香料市场'],
+    description: '你对异域文化有着强烈的好奇心，渴望用全部感官去体验世界。马拉喀什的德吉玛广场、迷宫般的麦地那和空气中弥漫的香料味，让你的每个毛孔都在冒险。',
+    traits: { artistic: 4, social: 3, adventure: 5, career: 1, nature: 3, food: 4, freedom: 3, culture: 5 },
+    color: '#C2410C',
+    emoji: '🕌'
+  }
+];

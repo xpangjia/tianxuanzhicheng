@@ -1,0 +1,112 @@
+/* Progress Bar */
+.progress-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--progress-bg);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 3px;
+  background: var(--accent-gradient);
+  transition: width 0.4s ease;
+}
+
+.progress-text {
+  font-size: 13px;
+  color: var(--text-dim);
+  white-space: nowrap;
+  min-width: 36px;
+  text-align: right;
+}
+
+/* Question Container */
+.question-container {
+  margin-top: 32px;
+  animation: slideInRight 0.35s ease-out;
+}
+
+.question-number {
+  font-size: 13px;
+  color: var(--accent);
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.question-text {
+  font-size: 22px;
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 28px;
+}
+
+/* Options */
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-card {
+  padding: 16px 20px;
+  border-radius: 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.option-card:hover {
+  background: var(--card-hover);
+  transform: translateY(-2px);
+}
+
+.option-card:active {
+  transform: scale(0.98);
+}
+
+.option-card.selected {
+  border-color: var(--accent);
+  background: var(--selected-bg);
+  color: var(--text-primary);
+}
+
+.option-card.selected:hover {
+  transform: none;
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@media (max-width: 375px) {
+  .question-text {
+    font-size: 19px;
+    margin-bottom: 22px;
+  }
+  .option-card {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+  .question-container {
+    margin-top: 24px;
+  }
+}

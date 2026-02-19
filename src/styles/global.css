@@ -1,0 +1,189 @@
+/* ===== Default Theme: Aurora (极光) - Dark ===== */
+:root {
+  --bg-primary: #0f0c29;
+  --bg-secondary: #1a1040;
+  --bg-gradient: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+
+  --accent: #ff6b6b;
+  --accent-light: #ff8a80;
+  --accent-warm: #ffc947;
+  --accent-purple: #a78bfa;
+  --accent-gradient: linear-gradient(135deg, #ff6b6b, #ffc947);
+
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-hint: rgba(255, 255, 255, 0.35);
+  --text-dim: rgba(255, 255, 255, 0.55);
+
+  --card-bg: rgba(255, 255, 255, 0.06);
+  --card-border: rgba(255, 255, 255, 0.10);
+  --card-hover: rgba(255, 255, 255, 0.10);
+  --card-active: rgba(255, 255, 255, 0.15);
+
+  --modal-bg: linear-gradient(145deg, #1a1040 0%, #0f0c29 100%);
+  --modal-overlay: rgba(0, 0, 0, 0.7);
+  --modal-border: rgba(255, 255, 255, 0.12);
+
+  --shadow-accent: rgba(255, 107, 107, 0.3);
+  --shadow-warm: rgba(255, 107, 107, 0.4);
+  --btn-ghost-border: rgba(255, 255, 255, 0.35);
+  --btn-ghost-hover: rgba(255, 255, 255, 0.6);
+  --progress-bg: rgba(255, 255, 255, 0.1);
+  --tag-feature-bg: rgba(255, 201, 71, 0.2);
+  --tag-warm-bg: rgba(255, 201, 71, 0.15);
+  --scrollbar-thumb: rgba(255, 255, 255, 0.15);
+  --selected-bg: rgba(255, 107, 107, 0.12);
+  --building-from: rgba(255, 107, 107, 0.3);
+  --building-to: rgba(255, 201, 71, 0.1);
+  --btn-share-text: #fff;
+
+  --radius: 16px;
+}
+
+/* ===== Theme: Morning Light (晨光) - Warm Light ===== */
+[data-theme="morning"] {
+  --bg-primary: #FFF8F0;
+  --bg-secondary: #FFF0E6;
+  --bg-gradient: linear-gradient(135deg, #FFF8F0 0%, #FFE8D6 50%, #FFF0E6 100%);
+
+  --accent: #E8553D;
+  --accent-light: #FF7A5C;
+  --accent-warm: #E59B15;
+  --accent-purple: #9B6FD0;
+  --accent-gradient: linear-gradient(135deg, #E8553D, #F5A623);
+
+  --text-primary: #2D2A26;
+  --text-secondary: rgba(45, 42, 38, 0.65);
+  --text-hint: rgba(45, 42, 38, 0.35);
+  --text-dim: rgba(45, 42, 38, 0.5);
+
+  --card-bg: rgba(255, 255, 255, 0.75);
+  --card-border: rgba(0, 0, 0, 0.07);
+  --card-hover: rgba(0, 0, 0, 0.04);
+  --card-active: rgba(0, 0, 0, 0.08);
+
+  --modal-bg: linear-gradient(145deg, #FFFFFF 0%, #FFF8F0 100%);
+  --modal-overlay: rgba(0, 0, 0, 0.25);
+  --modal-border: rgba(0, 0, 0, 0.08);
+
+  --shadow-accent: rgba(232, 85, 61, 0.2);
+  --shadow-warm: rgba(232, 85, 61, 0.25);
+  --btn-ghost-border: rgba(0, 0, 0, 0.18);
+  --btn-ghost-hover: rgba(0, 0, 0, 0.35);
+  --progress-bg: rgba(0, 0, 0, 0.06);
+  --tag-feature-bg: rgba(245, 166, 35, 0.15);
+  --tag-warm-bg: rgba(245, 166, 35, 0.12);
+  --scrollbar-thumb: rgba(0, 0, 0, 0.1);
+  --selected-bg: rgba(232, 85, 61, 0.08);
+  --building-from: rgba(232, 85, 61, 0.25);
+  --building-to: rgba(245, 166, 35, 0.1);
+  --btn-share-text: #fff;
+}
+
+/* ===== Theme: Ocean Breeze (海风) - Cool Light ===== */
+[data-theme="ocean"] {
+  --bg-primary: #EEF6FF;
+  --bg-secondary: #E0F0FF;
+  --bg-gradient: linear-gradient(135deg, #EEF6FF 0%, #D4EAFF 50%, #E8F4FD 100%);
+
+  --accent: #2B7FE0;
+  --accent-light: #5BA0F0;
+  --accent-warm: #16A07A;
+  --accent-purple: #7C5CDB;
+  --accent-gradient: linear-gradient(135deg, #2B7FE0, #16A07A);
+
+  --text-primary: #1A2B3C;
+  --text-secondary: rgba(26, 43, 60, 0.6);
+  --text-hint: rgba(26, 43, 60, 0.3);
+  --text-dim: rgba(26, 43, 60, 0.45);
+
+  --card-bg: rgba(255, 255, 255, 0.75);
+  --card-border: rgba(0, 0, 0, 0.06);
+  --card-hover: rgba(0, 0, 0, 0.04);
+  --card-active: rgba(0, 0, 0, 0.08);
+
+  --modal-bg: linear-gradient(145deg, #FFFFFF 0%, #EEF6FF 100%);
+  --modal-overlay: rgba(0, 0, 0, 0.25);
+  --modal-border: rgba(0, 0, 0, 0.08);
+
+  --shadow-accent: rgba(43, 127, 224, 0.2);
+  --shadow-warm: rgba(43, 127, 224, 0.25);
+  --btn-ghost-border: rgba(0, 0, 0, 0.18);
+  --btn-ghost-hover: rgba(0, 0, 0, 0.35);
+  --progress-bg: rgba(0, 0, 0, 0.06);
+  --tag-feature-bg: rgba(22, 160, 122, 0.12);
+  --tag-warm-bg: rgba(22, 160, 122, 0.10);
+  --scrollbar-thumb: rgba(0, 0, 0, 0.1);
+  --selected-bg: rgba(43, 127, 224, 0.08);
+  --building-from: rgba(43, 127, 224, 0.2);
+  --building-to: rgba(22, 160, 122, 0.1);
+  --btn-share-text: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-primary);
+  min-height: 100vh;
+  min-height: 100dvh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  transition: background 0.4s ease;
+}
+
+.app-container {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 20px;
+  padding-top: calc(20px + env(safe-area-inset-top, 0px));
+  padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+  position: relative;
+}
+
+/* Mobile adjustments */
+@media (max-width: 375px) {
+  .app-container {
+    padding: 16px 14px;
+    padding-top: calc(16px + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideOutLeft {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(-60px); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}

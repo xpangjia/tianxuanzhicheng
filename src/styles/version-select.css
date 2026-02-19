@@ -1,0 +1,191 @@
+.version-select {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 40px 20px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.version-back {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 15px;
+  cursor: pointer;
+  align-self: flex-start;
+  padding: 4px 0;
+  margin-bottom: 24px;
+  transition: color 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.version-back:hover {
+  color: var(--text-primary);
+}
+
+.version-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 32px;
+  animation: slideUp 0.6s ease-out 0.1s both;
+}
+
+/* Region Toggle */
+.region-section {
+  margin-bottom: 28px;
+  animation: slideUp 0.6s ease-out 0.2s both;
+}
+
+.region-toggle {
+  display: flex;
+  background: var(--card-bg);
+  border-radius: 50px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.region-tab {
+  flex: 1;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  color: var(--text-dim);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.region-tab.active {
+  background: var(--accent-gradient);
+  color: #fff;
+  box-shadow: 0 4px 15px var(--shadow-accent);
+}
+
+.region-tab:not(.active):hover {
+  color: var(--text-primary);
+}
+
+/* Difficulty Cards */
+.difficulty-section {
+  flex: 1;
+  animation: slideUp 0.6s ease-out 0.3s both;
+}
+
+.difficulty-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.difficulty-card {
+  padding: 20px;
+  border-radius: 16px;
+  background: var(--card-bg);
+  border: 1.5px solid var(--card-border);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.difficulty-card:hover {
+  background: var(--card-hover);
+  transform: translateY(-2px);
+}
+
+.difficulty-card:active {
+  transform: scale(0.98);
+}
+
+.difficulty-card.active {
+  border-color: var(--accent);
+  background: var(--selected-bg);
+  box-shadow: 0 0 20px var(--shadow-accent);
+}
+
+.difficulty-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.difficulty-icon {
+  font-size: 20px;
+}
+
+.difficulty-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.difficulty-badge {
+  margin-left: auto;
+  padding: 3px 10px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 600;
+  background: var(--accent-gradient);
+  color: #fff;
+}
+
+.difficulty-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.difficulty-meta {
+  font-size: 13px;
+  color: var(--text-hint);
+}
+
+/* Start Button */
+.version-start-btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--accent-gradient);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-top: 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideUp 0.6s ease-out 0.4s both;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.version-start-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 30px var(--shadow-warm);
+}
+
+.version-start-btn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 375px) {
+  .version-select {
+    padding: 30px 14px;
+  }
+  .version-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .difficulty-card {
+    padding: 16px;
+  }
+  .version-start-btn {
+    padding: 14px;
+    font-size: 16px;
+  }
+}
