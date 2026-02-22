@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import html2canvas from 'html2canvas';
+import { disclaimer } from '../config/disclaimer';
 import '../styles/result.css';
 
 export default function Result({ result, onRestart }) {
@@ -232,6 +233,8 @@ export default function Result({ result, onRestart }) {
           </div>
         </div>
       )}
+
+      <p className="disclaimer">{disclaimer.full}</p>
 
       {/* City Intro Modal */}
       {showIntro && (

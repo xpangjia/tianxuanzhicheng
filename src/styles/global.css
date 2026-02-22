@@ -163,6 +163,16 @@ body {
   }
 }
 
+/* Disclaimer */
+.disclaimer {
+  margin-top: 24px;
+  padding: 0 10px;
+  font-size: 11px;
+  color: var(--text-hint);
+  text-align: center;
+  line-height: 1.7;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }

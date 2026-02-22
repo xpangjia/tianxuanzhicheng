@@ -46,6 +46,14 @@ function App() {
     setPage('quiz')
   }
 
+  const handleBack = () => {
+    if (currentQuestion > 0) {
+      sound.click()
+      setAnswers(answers.slice(0, -1))
+      setCurrentQuestion(currentQuestion - 1)
+    }
+  }
+
   const handleAnswer = (questionId, optionId) => {
     sound.select()
     const currentQuestions = getQuestions()
@@ -86,7 +94,7 @@ function App() {
       )}
       {page === 'quiz' && currentQuestions && (
         <>
-          <Progress current={currentQuestion + 1} total={currentQuestions.length} />
+          <Progress current={currentQuestion + 1} total={currentQuestions.length} onBack={currentQuestion > 0 ? handleBack : null} />
           <Question
             key={currentQuestions[currentQuestion].id}
             question={currentQuestions[currentQuestion]}

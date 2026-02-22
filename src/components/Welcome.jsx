@@ -1,3 +1,4 @@
+import { disclaimer } from '../config/disclaimer';
 import '../styles/welcome.css';
 
 export default function Welcome({ onStart }) {
@@ -53,6 +54,7 @@ export default function Welcome({ onStart }) {
       </button>
 
       <p className="welcome-hint">共8道题 · 约2分钟</p>
+      <p className="disclaimer">{disclaimer.short}</p>
     </div>
   );
 }
